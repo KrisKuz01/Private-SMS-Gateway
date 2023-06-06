@@ -1,0 +1,23 @@
+1. Install Ubuntu and enable SSH
+2. Install smstools
+3. Connect the following SMS Modem: https://www.amazon.com/SIM800C-Wireless-Quad-Band-Communication-Transmission/dp/B087Z6F953
+4. Following commands for installation
+
+sudo apt update
+sudo apt install smstools
+sudo cp /etc/smsd.conf /etc/smsd.conf.bak (backup default config file)
+sudo service smstools stop
+sudo rm /etc/smsd.conf
+sudo nano /etc/smsd.conf  (smsd.conf is present in the repository)
+
+cd /var/spool/
+cd  sms/
+mkdir gsm1
+ls -lthra
+sudo chown smsd:smsd gsm1/ -R
+sudo service smstools start
+sudo chmod 777 /var/spool/sms/ -R
+sudo chown www-data:smsd /var/spool/sms/ -R
+ls -lthra
+
+tail /var/log/smstools/smsd.log (will provide you the status of the modem)
