@@ -1,5 +1,5 @@
 There will be a blog post linked to this project soon. In the meantime, create a mailbox and install Ubuntu with the smstools. Afterwards create a cron job for the run.py script.
-Associated phone numbers to the mailbox by creating an email alias (example 14503369292@test.com). This script will pull the phone number from the email and send the body of the email as a text message to 14503369292
+Associate phone numbers to the mailbox by creating an email alias (example 14503369292@test.com). This script will pull the phone number from the email and send the body of the email as a text message to 14503369292
 
 1. Install Ubuntu and enable SSH
 2. Install smstools
