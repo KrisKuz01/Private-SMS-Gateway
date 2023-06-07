@@ -1,3 +1,5 @@
+THIS SCRIPT WILL CONVERT ANY EMAILS TO A TEXT MESSAGE BY USING SMS MODEM\SMSTOOLS\GMAIL ADDRESS.
+
 There will be a blog post linked to this project soon. In the meantime, create a mailbox and install Ubuntu with smstools. Afterwards create a cron job for the run.py script.
 Associate phone numbers to the mailbox by creating an email alias (example 14503369292@test.com). This script will pull the phone number from the email and send the body of the email as a text message to 14503369292
 
