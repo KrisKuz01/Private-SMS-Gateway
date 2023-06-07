@@ -24,3 +24,19 @@ sudo chown www-data:smsd /var/spool/sms/ -R
 ls -lthra
 
 tail /var/log/smstools/smsd.log (will provide you the status of the modem)
+
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+The PRTG-GMAIL-CHECK.py checks if the mailbox has any messages that have stopped being processed and creates an SNMP Alert within PRTG
+
+Summary of the script for PRTG-GMAIL-CHECK.py:
+
+This script is designed to check the number of emails in a Gmail account's INBOX using IMAP. If there are any emails present, it creates an error message stating the count and saves it to an error file. 
+Additionally, it appends the error message to an archive file. If the error file already exists, it does nothing. Both the error file and the archive file are made writable. 
+If there are no emails in the INBOX, it deletes the error file if it exists. Finally, the script closes the connection to the mailbox and logs out of the Gmail account. 
+
+_____________________________________________________________________________________________________________________________________________________________________________
+
+The PRTG-MODEM-CHECK.sh checks the /var/spool/sms/gsm1 folder to see if there are any text messages pending over 5 minites. If yes, it'll create an SNMP Alert within PRTG
+
