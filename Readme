@@ -28,6 +28,12 @@ tail /var/log/smstools/smsd.log (will provide you the status of the modem)
 
 _____________________________________________________________________________________________________________________________________________________________________________
 
+PRTG ALERTING 
+
+FOLLOW THESE INSTRUCTIONS TO BE ABLE TO CHECK IF THE MODEM IS FAILING TO SEND MESSAGES: https://www.paessler.com/manuals/prtg/ssh_script_advanced_sensor
+
+
+
 The PRTG-GMAIL-CHECK.py checks if the mailbox has any messages that have stopped being processed and creates an SNMP Alert within PRTG
 
 Summary of the script for PRTG-GMAIL-CHECK.py:
